@@ -1,0 +1,14 @@
+/* 1. Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Set base typography */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
