@@ -28,3 +28,26 @@ body {
 .padding-box { background: lightgreen; border: 10px solid darkgreen; }
 .border-box { background: lightcoral; border: 15px dashed red; }
 .margin-box {background: lightyellow; margin: 40px;}
+/* Exercise 3: Card Component */
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin: 30px auto;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
