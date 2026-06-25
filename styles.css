@@ -12,3 +12,19 @@ body {
   color: #333;
   font-family: Poppins, sans-serif;
 }
+/* Box Model Practice - Exercise 1 */
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 600;
+}
+
+.content-box { background: lightblue; }
+.padding-box { background: lightgreen; border: 10px solid darkgreen; }
+.border-box { background: lightcoral; border: 15px dashed red; }
+.margin-box {background: lightyellow; margin: 40px;}
