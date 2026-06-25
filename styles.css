@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');* 1. Reset default styles */
 * {
-  margin: 0;
+  margin: 0;:root {
+  --font-xs: 0.75rem;   /* 12px */
+  --font-sm: 0.875rem;  /* 14px */
+  --font-base: 1rem;    /* 16px */
+  --font-lg: 1.125rem;  /* 18px */
+  --font-xl: 1.25rem;   /* 20px */
+  --font-2xl: 1.5rem;   /* 24px */
+  --font-3xl: 1.875rem; /* 30px */
+  --font-4xl: 2.25rem;  /* 36px */
+}
   padding: 0;
   box-sizing: border-box;
 }
 
 /* 2. Set base typography */
 body {
-  font-size: 16px;
+  font-size: var(--font-base);
   line-height: 1.6;
   color: #333;
   font-family: Poppins, sans-serif;
 }
-/* Box Model Practice - Exercise 1 */
+h1 { font-size: var(--font-4xl); } /* 36px */
+h2 { font-size: var(--font-3xl); } /* 30px *//* Box Model Practice - Exercise 1 */
 .box {
     width: 200px;
     height: 100px;
