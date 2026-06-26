@@ -139,3 +139,12 @@ h2 { font-size: var(--font-3xl); } /* 30px */
   border-radius: 12px;
   border: 1px solid #ddd;
 }
+... all your card/nav styles above ...
+
+.site-footer {
+  text-align: center;
+  padding: 16px;
+  background: #111; 
+  color: #fff;
+  margin-top: 40px;
+}
