@@ -1,33 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Regina Gathoni</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Regina</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+  <header>
+    <h1>Hi, I'm Regina Gathoni 👑</h1>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Regina</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-wrapper" id="contact">
+      <!-- FORM = 2fr on desktop -->
+      <div class="contact-form">
         <h1>Contact Me</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    
-    <main>
-        <h2>Let's Connect!</h2>
-        <p>I'm learning web development and would love to connect with fellow learners and mentors.</p>
-        
-        <h2>Email</h2>
-        <p>lydiaa06karanja-art@gmail.com</p>
-        
-        <h2>GitHub</h2>
-        <p>Check out my code: github.com/[your-username]/portfolio-site</p>
-        
-        <h2>Based in</h2>
-        <p>Kenya 🇰🇪</p>
-    </main>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- SIDEBAR = 1fr on desktop -->
+      <aside class="contact-sidebar">
+        <h2>Get in touch</h2>
+        <p>Email: lydiaa06karanja-art@gmail.com</p>
+        <p>Nairobi, KE 🇰🇪</p>
+        <p>GitHub: @lydia06karanja-art</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Regina</p>
+  </footer>
 </body>
 </html>
