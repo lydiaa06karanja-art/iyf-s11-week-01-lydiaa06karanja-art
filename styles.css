@@ -251,3 +251,41 @@ h2 { font-size: var(--font-3xl); } /* 30px */
   border-radius: 8px;
   background: #fff;
 }
+/* === TASK 4.3 HERO: MOBILE FIRST === */
+
+/* 1. MOBILE DEFAULTS: 320px up = 1 column, stack */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column */
+  gap: 2rem;
+  padding: 2rem 1rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-text h1 { font-size: var(--font-3xl); margin-bottom: 1rem; }
+.hero-img img { 
+  width: 100%; 
+  height: auto; 
+  border-radius: 12px; 
+  display: block;
+}
+.btn {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+/* 2. DESKTOP OVERRIDE: 1024px up = 2 columns side-by-side */
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 4rem;
+    padding: 4rem 2rem;
+  }
+  .hero-text h1 { font-size: var(--font-4xl); } /* Bigger on desktop */
+}
