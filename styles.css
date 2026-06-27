@@ -289,3 +289,38 @@ h2 { font-size: var(--font-3xl); } /* 30px */
   }
   .hero-text h1 { font-size: var(--font-4xl); } /* Bigger on desktop */
 }
+/* === TASK 4.3 CONTACT: MOBILE FIRST === */
+
+/* 1. MOBILE DEFAULTS: 320px up = 1 column stack */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column */
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact-form label { display: block; margin-top: 1rem; font-weight: 600; }
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+.contact-sidebar {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+/* 2. DESKTOP OVERRIDE: 1024px up = Form + Sidebar */
+@media (min-width: 1024px) {
+  .contact-wrapper {
+    grid-template-columns: 2fr 1fr; /* Form big, sidebar small */
+    gap: 3rem;
+    padding: 3rem 2rem;
+  }
+}
